@@ -1,23 +1,50 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonButton, IonContent, IonFooter, IonHeader, IonIcon, IonItem, IonLabel, IonPage, IonRouterLink, IonRow, IonTitle, IonToggle, IonToolbar } from '@ionic/react';
+import { chevronBackSharp, ellipsisVerticalSharp } from 'ionicons/icons';
+
 import './Tab3.css';
 
 const Tab3: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 3</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 3</IonTitle>
-          </IonToolbar>
+      <IonToolbar>
+
+        <IonHeader >
+          <IonItem lines='none'>
+            <IonIcon icon={chevronBackSharp}></IonIcon>
+            <IonTitle class='ion-text-center'>Account</IonTitle>
+            <IonIcon icon={ellipsisVerticalSharp}></IonIcon>
+          </IonItem>
         </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
+      </IonToolbar>
+      <IonContent>
+        <IonItem lines='none' >
+          <IonLabel className='outline-box'>Hide Account</IonLabel>
+          <IonToggle slot='end'></IonToggle>
+        </IonItem>
+        <IonItem lines='none' >
+          <p className='paragraph'>Make sure you can remember you password, as you'll need it to sign back in</p>
+
+        </IonItem >
+
+        <IonRow  className='body-content' >and ******@gmail.com</IonRow>
       </IonContent>
+      <IonToolbar>
+        <IonFooter>
+          
+            <IonButton expand="full" shape="round">Save Changes</IonButton>
+            
+          
+            <IonButton  expand="full" shape="round">Log out</IonButton>
+
+            
+          <IonRow class='ion-justify-content-center'>
+            <IonItem lines='none' >
+              <IonRouterLink className='delete-button' > Delete Account</IonRouterLink>
+            </IonItem>
+            </IonRow>
+        </IonFooter>
+      </IonToolbar>
+
     </IonPage>
   );
 };

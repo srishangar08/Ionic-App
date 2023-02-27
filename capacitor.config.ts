@@ -4,7 +4,11 @@ const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
   appName: 'myApp',
   webDir: 'build',
-  bundledWebRuntime: false
+  bundledWebRuntime: false,
+  server: {
+    url: 'http://192.168.0.113:8100',
+    cleartext: true,
+     },
 };
 
 export default config;
