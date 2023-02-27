@@ -11,7 +11,7 @@ const Tab6: React.FC = () => {
                 </IonHeader>
             </IonToolbar>
             <IonContent class="ion-text-center" >
-                <IonImg   src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0mqc-IDNtIqXe2iU0gT050zBGq8QO74h4LDoKiemrlA&s' ></IonImg>
+                <IonImg  src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0mqc-IDNtIqXe2iU0gT050zBGq8QO74h4LDoKiemrlA&s' ></IonImg>
                 {/* <IonIcon className='icon-size' icon={checkmarkCircle}  size="large"></IonIcon> */}
                 <IonItem lines='none'>
                     <h1>Successfully</h1>

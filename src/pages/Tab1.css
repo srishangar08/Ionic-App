@@ -13,3 +13,11 @@ margin-top: 10px;
     margin-top: 5px;
     margin-bottom: 26px;
 }
+.button{
+    height: 60px;
+    margin: 18px;
+}
+
+/* .btn-color {
+    color: var(--ion-color-text-secondary) !important;
+} */

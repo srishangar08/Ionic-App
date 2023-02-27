@@ -10,9 +10,9 @@ const Tab3: React.FC = () => {
 
         <IonHeader >
           <IonItem lines='none'>
-            <IonIcon icon={chevronBackSharp}></IonIcon>
+           <IonButton fill='clear'><IonIcon icon={chevronBackSharp}></IonIcon></IonButton> 
             <IonTitle class='ion-text-center'>Account</IonTitle>
-            <IonIcon icon={ellipsisVerticalSharp}></IonIcon>
+           <IonButton fill='clear'><IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton> 
           </IonItem>
         </IonHeader>
       </IonToolbar>
@@ -31,10 +31,10 @@ const Tab3: React.FC = () => {
       <IonToolbar>
         <IonFooter>
           
-            <IonButton expand="full" shape="round">Save Changes</IonButton>
+            <IonButton color="tertiary" expand="full" shape="round">Save Changes</IonButton>
             
           
-            <IonButton  expand="full" shape="round">Log out</IonButton>
+            <IonButton color="tertiary" expand="full" shape="round">Log out</IonButton>
 
             
           <IonRow class='ion-justify-content-center'>

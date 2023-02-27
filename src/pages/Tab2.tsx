@@ -10,9 +10,9 @@ const Tab2: React.FC = () => {
         <IonHeader>
       <IonItem lines='none'>
   
-  <IonIcon icon={chevronBackSharp}></IonIcon>
+  <IonButton fill='clear'><IonIcon icon={chevronBackSharp}></IonIcon></IonButton>
     <IonTitle class='ion-text-center' className='profile-title'>Help Center</IonTitle>
-    <IonIcon icon={ellipsisVerticalSharp}></IonIcon>
+   <IonButton fill='clear'> <IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton>
     </IonItem>
     </IonHeader>
     </IonToolbar>

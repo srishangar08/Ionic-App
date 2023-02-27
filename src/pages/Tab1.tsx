@@ -9,12 +9,12 @@ const Tab1: React.FC = () => {
       <IonToolbar>
         <IonHeader>
           <IonItem lines='none' className='title'>
-            <IonIcon icon={chevronBackSharp}></IonIcon>
+           <IonButton fill='clear'><IonIcon icon={chevronBackSharp}></IonIcon></IonButton> 
             <IonTitle class="ion-text-center">Change Email</IonTitle>
 
 
 
-            <IonIcon icon={ellipsisVerticalSharp}></IonIcon>
+            <IonButton fill='clear'><IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton>
 
           </IonItem  >
         </IonHeader>
@@ -44,7 +44,7 @@ const Tab1: React.FC = () => {
 
       <IonToolbar>
         <IonFooter>
-          <IonButton expand="full" shape="round" >Save Email</IonButton>
+          <IonButton color="tertiary" className='button' expand="full" shape="round" >Save Email</IonButton>
 
         </IonFooter>
       </IonToolbar>

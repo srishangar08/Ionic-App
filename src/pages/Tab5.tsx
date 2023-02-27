@@ -7,9 +7,9 @@ const Tab5: React.FC = () => {
         <IonPage>
             <IonToolbar>
                 <IonItem lines='none'>
-                    <IonIcon icon={chevronBackSharp}></IonIcon>
+                    <IonButton fill='clear'><IonIcon icon={chevronBackSharp}></IonIcon></IonButton>
                     <IonTitle class="ion-text-center" className='your-profile-title'>Your Profile</IonTitle>
-                    <IonIcon icon={ellipsisVerticalSharp}></IonIcon>
+                    <IonButton fill='clear'><IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton>
                 </IonItem>
                 <IonItem lines='none'>
                     <h1>Account</h1>
