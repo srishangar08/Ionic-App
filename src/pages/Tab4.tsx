@@ -1,8 +1,9 @@
 import { IonButton, IonContent, IonFooter, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonRow, IonTextarea, IonTitle, IonToolbar } from '@ionic/react';
 import { chevronBackSharp, ellipsisVerticalSharp } from 'ionicons/icons';
 import './Tab4.css';
-
+// import {useNavigate} 
 const Tab4: React.FC = () => {
+  // let navigate = useNavigate();
   return (
     <IonPage>
       <IonToolbar>
