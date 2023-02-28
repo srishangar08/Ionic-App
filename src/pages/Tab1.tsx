@@ -8,12 +8,12 @@ const Tab1: React.FC = () => {
 
       <IonToolbar>
         <IonHeader>
-          <IonItem lines='none' className='title'>
-           <IonButton fill='clear'><IonIcon icon={chevronBackSharp}></IonIcon></IonButton> 
-            <IonTitle class="ion-text-center">Change Email</IonTitle>
-<IonButton fill='clear'><IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton>
+          <IonItem lines='none'>
 
-          </IonItem  >
+            <IonButton fill='clear'><IonIcon icon={chevronBackSharp}></IonIcon></IonButton>
+            <IonTitle class='ion-text-center' className='profile-title'>Change email</IonTitle>
+            <IonButton fill='clear'> <IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton>
+          </IonItem>
         </IonHeader>
       </IonToolbar>
 
@@ -40,7 +40,8 @@ const Tab1: React.FC = () => {
       </IonContent>
 
       <IonToolbar>
-        <IonFooter>
+        <IonFooter >
+          <IonItem lines='none' />
           <IonButton color="tertiary" className='button' expand="full" shape="round" >Save Email</IonButton>
 
         </IonFooter>

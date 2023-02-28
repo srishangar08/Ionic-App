@@ -1,9 +1,12 @@
 .icon-size{
     size: 20px;
 }
-h1{
-    margin-left: 115px;
+.success{
+    margin: auto;
 }
 .icon-size{
-    size: px;
+    margin-top: 40px;
+}
+.icon-size-two{
+    margin-top: 40px;
 }

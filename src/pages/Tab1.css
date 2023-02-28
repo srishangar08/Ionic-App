@@ -10,14 +10,14 @@ margin-top: 10px;
     margin-top: 365px;
 }
 .title{
-    margin-top: 5px;
-    margin-bottom: 26px;
+    /* margin-top: 10px; */
+    
+    margin-bottom: 25px;
 }
 .button{
     height: 60px;
     margin: 18px;
 }
 
-/* .btn-color {
-    color: var(--ion-color-text-secondary) !important;
-} */
+
+    

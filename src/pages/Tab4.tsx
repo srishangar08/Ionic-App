@@ -45,6 +45,7 @@ const Tab4: React.FC = () => {
       </IonContent>
       <IonToolbar>
         <IonFooter>
+        <IonItem lines='none'/>
           <IonButton color="tertiary" expand="full" shape="round">Save Changes</IonButton>
 
 
