@@ -10,14 +10,14 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle, home, heart, codeOutline, person, timerOutline, shuffle, logoDropbox, accessibility } from 'ionicons/icons';
+import { ellipse, square, triangle, home, heart, codeOutline, person, timerOutline, shuffle, logoDropbox, accessibility, logoBuffer } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Tab4 from './pages/Tab4';
 import Tab5 from './pages/Tab5';
 import Tab6 from './pages/Tab6';
-
+import Tab7 from './pages/Tab7';
 
 import '@ionic/react/css/core.css';
 
@@ -35,6 +35,7 @@ import '@ionic/react/css/display.css';
 
 
 import './theme/variables.css';
+
 
 setupIonicReact();
 
@@ -55,6 +56,8 @@ const App: React.FC = () => (
         <Redirect exact from="/" to="/tab5" />
         <Route path="/tab6" component={Tab6} />
         <Redirect exact from="/" to="/tab6" />
+        <Route path="/tab7" component={Tab7} />
+        <Redirect exact from="/" to="/tab7" />
           {/* <Route exact path="/tab1">
             <Tab1 />
           </Route>
@@ -93,6 +96,10 @@ const App: React.FC = () => (
           </IonTabButton>
           <IonTabButton tab="tab4" href="/tab4">
             <IonIcon icon={person} />
+            <IonLabel>Profile</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="tab7" href="/tab7">
+            <IonIcon icon={logoBuffer} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
           {/* <IonTabButton tab="tab5" href="/tab5">

@@ -10,9 +10,9 @@ const Tab4: React.FC = () => {
         <IonHeader>
           <IonItem lines='none'>
 
-            <IonButton fill='clear'><IonIcon icon={chevronBackSharp}></IonIcon></IonButton>
-            <IonTitle className='profile-title'>Change Personal Profile</IonTitle>
-            <IonButton fill='clear'><IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton>
+          <IonButton fill='clear'><IonIcon icon={chevronBackSharp}></IonIcon></IonButton>
+            <IonTitle class='ion-text-center' className='profile-title'>Change Personal Profile</IonTitle>
+            <IonButton fill='clear'> <IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton>
           </IonItem>
         </IonHeader>
       </IonToolbar>
@@ -46,7 +46,7 @@ const Tab4: React.FC = () => {
       <IonToolbar>
         <IonFooter>
         <IonItem lines='none'/>
-          <IonButton color="tertiary" expand="full" shape="round">Save Changes</IonButton>
+          <IonButton color="primary"  expand="full" shape="round">Save Changes</IonButton>
 
 
         </IonFooter>

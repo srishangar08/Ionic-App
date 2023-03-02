@@ -1,4 +1,4 @@
-import { IonAccordion, IonAccordionGroup, IonBackButton, IonButton, IonContent, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonSearchbar, IonTitle, IonToolbar } from '@ionic/react';
+import { IonAccordion, IonAccordionGroup, IonBackButton, IonButton, IonCard, IonContent, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonSearchbar, IonTitle, IonToolbar } from '@ionic/react';
 import { chevronBackSharp, chevronDownSharp, chevronForwardSharp, ellipsisVerticalSharp } from 'ionicons/icons';
 
 import './Tab2.css';
@@ -21,6 +21,8 @@ const Tab2: React.FC = () => {
           <IonItem lines='none' className='search-bar'>
             <IonSearchbar placeholder='Search anything here'></IonSearchbar>
           </IonItem>
+          
+    {/* <IonCard mode='ios'> */}
           <IonAccordionGroup className='total-form'>
             <IonAccordion value="first">
               <IonItem slot="header" color="light">
@@ -72,8 +74,9 @@ const Tab2: React.FC = () => {
               </div>
             </IonAccordion>
           </IonAccordionGroup>
-        
+          {/* </IonCard> */}
       </IonContent>
+      
     </IonPage>
   );
 };
