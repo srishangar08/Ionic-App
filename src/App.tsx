@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle, home, heart, codeOutline, person, timerOutline, shuffle, logoDropbox, accessibility, logoBuffer } from 'ionicons/icons';
+import { ellipse, square, triangle, home, heart, codeOutline, person, timerOutline, shuffle, logoDropbox, accessibility, logoBuffer, logoApple, logoAmazon } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -35,6 +35,8 @@ import '@ionic/react/css/display.css';
 
 
 import './theme/variables.css';
+import Tab8 from './pages/Tab8';
+import Tab9 from './pages/Tab9';
 
 
 setupIonicReact();
@@ -58,6 +60,10 @@ const App: React.FC = () => (
         <Redirect exact from="/" to="/tab6" />
         <Route path="/tab7" component={Tab7} />
         <Redirect exact from="/" to="/tab7" />
+        <Route path="/tab8" component={Tab8} />
+        <Redirect exact from="/" to="/tab8" />
+        <Route path="/tab9" component={Tab9} />
+        <Redirect exact from="/" to="/tab9" />
           {/* <Route exact path="/tab1">
             <Tab1 />
           </Route>
@@ -94,12 +100,20 @@ const App: React.FC = () => (
             <IonIcon icon={shuffle} />
             <IonLabel>Statistic</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab4" href="/tab4">
+          {/* <IonTabButton tab="tab4" href="/tab4">
             <IonIcon icon={person} />
             <IonLabel>Profile</IonLabel>
-          </IonTabButton>
+          </IonTabButton> */}
           <IonTabButton tab="tab7" href="/tab7">
             <IonIcon icon={logoBuffer} />
+            <IonLabel>Profile</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="tab8" href="/tab8">
+            <IonIcon icon={logoApple} />
+            <IonLabel>Profile</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="tab9" href="/tab9">
+            <IonIcon icon={logoAmazon} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
           {/* <IonTabButton tab="tab5" href="/tab5">

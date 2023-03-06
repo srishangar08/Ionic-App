@@ -1,8 +1,14 @@
 import { IonBackButton, IonButton, IonContent, IonFooter, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonList, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
-import { arrowBack, bag, chevronBackSharp, ellipsisVertical, ellipsisVerticalSharp, home, logoAndroid, swapVertical } from 'ionicons/icons';
+import { arrowBack, bag, chevronBackSharp, ellipsisVertical, ellipsisVerticalSharp, eyeOffOutline, eyeOutline, home, logoAndroid, swapVertical } from 'ionicons/icons';
+import { useState } from 'react';
+import { useHistory } from 'react-router';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
+  
+  const history = useHistory()
+  // const []
+  const [isRevealPwd, setIsRevealPwd] = useState(false);
   return (
     <IonPage >
 
@@ -10,9 +16,9 @@ const Tab1: React.FC = () => {
         <IonHeader>
           <IonItem lines='none'>
 
-          <IonButton fill='clear'><IonIcon icon={chevronBackSharp}></IonIcon></IonButton>
-    <IonTitle class='ion-text-center' className='profile-title'>Help Center</IonTitle>
-   <IonButton fill='clear'> <IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton>
+            <IonButton fill='clear'><IonIcon icon={chevronBackSharp}></IonIcon></IonButton>
+            <IonTitle class='ion-text-center'>Change Email</IonTitle>
+            <IonButton fill='clear'><IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton>
           </IonItem>
         </IonHeader>
       </IonToolbar>
@@ -35,14 +41,22 @@ const Tab1: React.FC = () => {
         <IonLabel className="text-title">Enter your email Password</IonLabel>
         <IonIcon name='eye' item-right></IonIcon>
         <IonItem fill="outline" className="outline-box">
-          <IonInput type="password" ></IonInput>
+          <IonInput
+            name="pwd"
+            type={isRevealPwd ? "text" : "password"}
+          ></IonInput>
+          <IonIcon className='eye-icon'
+            icon={isRevealPwd ? eyeOutline : eyeOffOutline}
+            onClick={() => setIsRevealPwd(prevState => !prevState)}
+          />
         </IonItem>
       </IonContent>
 
       <IonToolbar>
         <IonFooter >
           <IonItem lines='none' />
-          <IonButton  color="primary" className='button' expand="full" shape="round" ><span style={{color:'#ffffff'}}>Save Email</span></IonButton>
+          <IonButton  onClick={() => {
+              history.push('/tab2') }} color="primary" className='button' expand="full" shape="round" ><span style={{ color: '#ffffff' }}>Save Email</span></IonButton>
 
         </IonFooter>
       </IonToolbar>

@@ -1,8 +1,11 @@
 import { IonAccordion, IonAccordionGroup, IonButton, IonCard, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonImg, IonInput, IonItem, IonLabel, IonPage, IonRow, IonTextarea, IonTitle, IonToolbar } from '@ionic/react';
 import { bagOutline, bagSharp, banSharp, checkmarkCircle, chevronBackSharp, chevronForwardOutline, ellipsisVerticalSharp, helpCircleOutline, helpCircleSharp, mail, personCircle, personSharp } from 'ionicons/icons';
+import { useHistory } from 'react-router';
 import './Tab6.css';
 
 const Tab6: React.FC = () => {
+    
+  const history = useHistory()
     return (
         <IonPage>
             <IonToolbar>
@@ -50,7 +53,8 @@ const Tab6: React.FC = () => {
             <IonToolbar>
                 <IonFooter>
                     <IonItem lines='none' />
-                    <IonButton expand="full" shape="round">Back to Home</IonButton>
+                    <IonButton expand="full" shape="round"  onClick={() => {
+              history.push('/tab7') }}>Back to Home</IonButton>
                 </IonFooter>
             </IonToolbar>
 

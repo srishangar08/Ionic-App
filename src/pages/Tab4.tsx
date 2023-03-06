@@ -1,8 +1,11 @@
 import { IonButton, IonContent, IonFooter, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonRow, IonTextarea, IonTitle, IonToolbar } from '@ionic/react';
 import { chevronBackSharp, ellipsisVerticalSharp } from 'ionicons/icons';
+import { useHistory } from 'react-router';
 import './Tab4.css';
 // import {useNavigate} 
 const Tab4: React.FC = () => {
+  
+  const history = useHistory()
   // let navigate = useNavigate();
   return (
     <IonPage>
@@ -10,9 +13,10 @@ const Tab4: React.FC = () => {
         <IonHeader>
           <IonItem lines='none'>
 
-          <IonButton fill='clear'><IonIcon icon={chevronBackSharp}></IonIcon></IonButton>
-            <IonTitle class='ion-text-center' className='profile-title'>Change Personal Profile</IonTitle>
-            <IonButton fill='clear'> <IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton>
+          <IonButton fill='clear'  onClick={() => {
+              history.push('/tab3') }}><IonIcon icon={chevronBackSharp}></IonIcon></IonButton> 
+            <IonTitle class='ion-text-center'>Change Profile</IonTitle>
+           <IonButton fill='clear'><IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton> 
           </IonItem>
         </IonHeader>
       </IonToolbar>
@@ -46,7 +50,8 @@ const Tab4: React.FC = () => {
       <IonToolbar>
         <IonFooter>
         <IonItem lines='none'/>
-          <IonButton color="primary"  expand="full" shape="round">Save Changes</IonButton>
+          <IonButton color="primary"  expand="full" shape="round"  onClick={() => {
+              history.push('/tab5') }}>Save Changes</IonButton>
 
 
         </IonFooter>

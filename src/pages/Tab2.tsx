@@ -1,18 +1,22 @@
 import { IonAccordion, IonAccordionGroup, IonBackButton, IonButton, IonCard, IonContent, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonSearchbar, IonTitle, IonToolbar } from '@ionic/react';
 import { chevronBackSharp, chevronDownSharp, chevronForwardSharp, ellipsisVerticalSharp } from 'ionicons/icons';
+import { useHistory } from 'react-router';
 
 import './Tab2.css';
 
 const Tab2: React.FC = () => {
+  
+  const history = useHistory()
   return (
     <IonPage>
       <IonToolbar>
         <IonHeader>
       <IonItem lines='none'>
   
-  <IonButton fill='clear'><IonIcon icon={chevronBackSharp}></IonIcon></IonButton>
-    <IonTitle class='ion-text-center' className='profile-title'>Help Center</IonTitle>
-   <IonButton fill='clear'> <IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton>
+      <IonButton fill='clear'  onClick={() => {
+              history.push('/tab1') }}><IonIcon icon={chevronBackSharp}></IonIcon></IonButton> 
+            <IonTitle class='ion-text-center'>Help Center</IonTitle>
+           <IonButton fill='clear'><IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton> 
     </IonItem>
     </IonHeader>
     </IonToolbar>
