@@ -37,6 +37,8 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import Tab8 from './pages/Tab8';
 import Tab9 from './pages/Tab9';
+import Tab10 from './pages/Tab10';
+import Tab11 from './pages/Tab11';
 
 
 setupIonicReact();
@@ -64,6 +66,10 @@ const App: React.FC = () => (
         <Redirect exact from="/" to="/tab8" />
         <Route path="/tab9" component={Tab9} />
         <Redirect exact from="/" to="/tab9" />
+        <Route path="/tab10" component={Tab10} />
+        <Redirect exact from="/" to="/tab10" />
+        <Route path="/tab11" component={Tab11} />
+        <Redirect exact from="/" to="/tab11" />
           {/* <Route exact path="/tab1">
             <Tab1 />
           </Route>
@@ -104,18 +110,22 @@ const App: React.FC = () => (
             <IonIcon icon={person} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton> */}
-          <IonTabButton tab="tab7" href="/tab7">
+          {/* <IonTabButton tab="tab7" href="/tab7">
             <IonIcon icon={logoBuffer} />
             <IonLabel>Profile</IonLabel>
-          </IonTabButton>
+          </IonTabButton> */}
           <IonTabButton tab="tab8" href="/tab8">
-            <IonIcon icon={logoApple} />
+            <IonIcon icon={timerOutline} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab9" href="/tab9">
             <IonIcon icon={logoAmazon} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
+          {/* <IonTabButton tab="tab10" href="/tab10">
+            <IonIcon icon={logoBuffer} />
+            <IonLabel>Profile</IonLabel>
+          </IonTabButton> */}
           {/* <IonTabButton tab="tab5" href="/tab5">
             <IonIcon icon={logoDropbox} />
             <IonLabel>Account</IonLabel>
@@ -123,6 +133,10 @@ const App: React.FC = () => (
           {/* <IonTabButton tab="tab6" href="/tab6">
             <IonIcon icon={accessibility} />
             <IonLabel>Home-2</IonLabel>
+          </IonTabButton> */}
+            {/* <IonTabButton tab="tab11" href="/tab11">
+            <IonIcon icon={logoBuffer} />
+            <IonLabel>Profile</IonLabel>
           </IonTabButton> */}
         </IonTabBar>
       </IonTabs>

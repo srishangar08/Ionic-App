@@ -1,6 +1,7 @@
 .paragraph{
     /* margin: 20px;     */
     text-align: center;
+    opacity: 50%    ;
 }
 
 
@@ -16,5 +17,7 @@
 .body-content{
     /* margin-left: 10px; */
     font-size: larger;
+    text-align: center;
+    margin-top: -30px;
     
 }
