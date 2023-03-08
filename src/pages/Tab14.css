@@ -1,0 +1,27 @@
+.heading-content{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 150px;
+    
+}
+.text-title-1{
+    margin: 20px;
+    /* margin-top: 50px; */
+}
+
+.md-text{
+font-size: 12px;
+justify-content: left;
+}
+
+.md-check
+{
+    opacity: 30%;
+}   
+.last-text{
+    margin: auto;   
+}
+.sign-up{
+    font-weight: bolder;
+}

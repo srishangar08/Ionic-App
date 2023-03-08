@@ -37,12 +37,12 @@ const Tab3: React.FC = () => {
       <IonToolbar>
         <IonFooter>
           <IonItem lines='none' />
-          <IonButton onClick={() => {
-            history.push('/tab4')
-          }} color="primary" expand="full" shape="round">Save Changes</IonButton>
+            <IonButton onClick={() => {
+              history.push('/tab4')
+            }} color="primary" expand="full" shape="round">Save Changes</IonButton>
+  
 
-
-          <IonButton color="primary" fill="outline" expand="full" shape="round">Log out</IonButton>
+            <IonButton color="primary" fill="outline" expand="full" shape="round">Log out</IonButton>
 
 
           <IonRow class='ion-justify-content-center'>

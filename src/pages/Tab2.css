@@ -1,12 +1,25 @@
-h2{
-    text-align: center;
-    font-size: x-large;
-    font-weight: 600;
+.send-image{
+    margin: auto;
+    width: 200px;
+    margin-top: 165px;
 }
-.img-sendmoney{
-    margin-top: 105px;
-    /* display: flex; */
-width: 200px;
-    /* justify-content: center; */
-    /* height: 270px; */
+
+
+.fs{
+    margin-top: 80px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+.sendmoney-para{
+    text-align: center;
+    opacity: 50%;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+}
+.skip-button{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: larger;
 }

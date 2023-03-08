@@ -2,14 +2,16 @@ import { IonAccordion, IonAccordionGroup, IonBackButton, IonButton, IonCard, Ion
 import { chevronBackSharp, chevronDownSharp, chevronForwardSharp, ellipsisVerticalSharp } from 'ionicons/icons';
 import { useHistory } from 'react-router';
 
-import './Tab2.css';
+import './Tab0.css';
 
-const Tab2: React.FC = () => {
+const Tab0: React.FC = () => {
   
   const history = useHistory()
   return (
-    <IonPage>
-    <IonContent>
+    <IonPage className='front-page'>
+         <IonImg className='front-page-img'  src='../assets/images/First page.png'></IonImg>
+         
+    {/* <IonContent>
       <IonImg className='send-image ' src='../assets/images/Send money.png'></IonImg>
       <IonText className='heading-content'><h3 className='fs'>Send Money</h3></IonText>
       <IonItem className='sendmoney-para' lines='none'>
@@ -27,9 +29,9 @@ const Tab2: React.FC = () => {
             </IonItem>
           </IonRow>
         </IonFooter>
-      </IonToolbar>
+      </IonToolbar> */}
     </IonPage>
   );
 };
 
-export default Tab2;
+export default Tab0;
