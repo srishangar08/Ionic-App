@@ -19,7 +19,7 @@ const Tab17: React.FC = () => {
       </IonItem>
       
       <IonLabel className='email-forgot'>Email Address</IonLabel>
-      <IonItem fill='outline' className="outline-box" >
+      <IonItem fill='outline' className="outline-box">
       <IonInput type='email' placeholder='alexander@gmail.com' ></IonInput>
       </IonItem>
     </IonContent>

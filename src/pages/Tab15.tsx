@@ -26,7 +26,7 @@ const Tab15: React.FC = () => {
             }} color="primary" expand="full" shape="round">Send Code</IonButton>
  <IonButton onClick={() => {
               history.push('/tab4')
-            }} color="primary" fill='outline' expand="full" shape="round">Send up with Email</IonButton>
+            }} color="primary" fill='outline' expand="full" shape="round">Sign up with Email</IonButton>
     </IonFooter>
    </IonToolbar>
     </IonPage>

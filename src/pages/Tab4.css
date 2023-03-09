@@ -1,5 +1,6 @@
 .outline-box{
     margin: 20px;
+    margin-top: 10px;
 }
 .save-changes{
     margin: auto;
@@ -9,4 +10,25 @@
 }
 .button-submitted{
     margin-top: 240px;
+}
+.edit-profile{
+    margin-top: 23px;
+}
+.text-title-1{
+    margin: 17px;
+}
+.text-title-2{
+    margin: 17px;
+/* margin-top: 10px; */
+
+}
+.text-title-3{
+    margin: 17px;
+/* margin-top: 10px; */
+
+}
+.text-title-4{
+    margin: 17px;
+/* margin-top: 5px; */
+
 }

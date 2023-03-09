@@ -49,6 +49,7 @@ import Tab17 from './pages/Tab17';
 import Tab18 from './pages/Tab18';
 
 
+
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -56,45 +57,46 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-        <Route path="/tab0" component={Tab0} />
-        <Redirect exact from="/" to="/tab0" />
-        <Route path="/tab1" component={Tab1} />
-        <Redirect exact from="/" to="/tab1" />
-        <Route path="/tab2" component={Tab2} />
-        <Redirect exact from="/" to="/tab2" />
-       
-        <Route path="/tab3" component={Tab3} />
-        <Redirect exact from="/" to="/tab3" />
-        <Route path="/tab4" component={Tab4} />
-        <Redirect exact from="/" to="/tab4" />
-        <Route path="/tab5" component={Tab5} />
-        <Redirect exact from="/" to="/tab5" />
-        <Route path="/tab6" component={Tab6} />
-        <Redirect exact from="/" to="/tab6" />
-        <Route path="/tab7" component={Tab7} />
-        <Redirect exact from="/" to="/tab7" />
-        <Route path="/tab8" component={Tab8} />
-        <Redirect exact from="/" to="/tab8" />
-        <Route path="/tab9" component={Tab9} />
-        <Redirect exact from="/" to="/tab9" />
-        <Route path="/tab10" component={Tab10} />
-        <Redirect exact from="/" to="/tab10" />
-        <Route path="/tab11" component={Tab11} />
-        <Redirect exact from="/" to="/tab11" />
-        <Route path="/tab12" component={Tab12} />
-        <Redirect exact from="/" to="/tab12" />
-        <Route path="/tab13" component={Tab13} />
-        <Redirect exact from="/" to="/tab13" />
-        <Route path="/tab14" component={Tab14} />
-        <Redirect exact from="/" to="/tab14" />
-        <Route path="/tab15" component={Tab15} />
-        <Redirect exact from="/" to="/tab15" />
-        <Route path="/tab16" component={Tab16} />
-        <Redirect exact from="/" to="/tab16" />
-        <Route path="/tab17" component={Tab17} />
-        <Redirect exact from="/" to="/tab17" />
-        <Route path="/tab18" component={Tab18} />
-        <Redirect exact from="/" to="/tab18" />
+          <Route path="/tab0" component={Tab0} />
+          <Redirect exact from="/" to="/tab0" />
+          <Route path="/tab1" component={Tab1} />
+          <Redirect exact from="/" to="/tab1" />
+          <Route path="/tab2" component={Tab2} />
+          <Redirect exact from="/" to="/tab2" />
+
+          <Route path="/tab3" component={Tab3} />
+          <Redirect exact from="/" to="/tab3" />
+          <Route path="/tab4" component={Tab4} />
+          <Redirect exact from="/" to="/tab4" />
+          <Route path="/tab5" component={Tab5} />
+          <Redirect exact from="/" to="/tab5" />
+          <Route path="/tab6" component={Tab6} />
+          <Redirect exact from="/" to="/tab6" />
+          <Route path="/tab7" component={Tab7} />
+          <Redirect exact from="/" to="/tab7" />
+          <Route path="/tab8" component={Tab8} />
+          <Redirect exact from="/" to="/tab8" />
+          <Route path="/tab9" component={Tab9} />
+          <Redirect exact from="/" to="/tab9" />
+          <Route path="/tab10" component={Tab10} />
+          <Redirect exact from="/" to="/tab10" />
+          <Route path="/tab11" component={Tab11} />
+          <Redirect exact from="/" to="/tab11" />
+          <Route path="/tab12" component={Tab12} />
+          <Redirect exact from="/" to="/tab12" />
+          <Route path="/tab13" component={Tab13} />
+          <Redirect exact from="/" to="/tab13" />
+          <Route path="/tab14" component={Tab14} />
+          <Redirect exact from="/" to="/tab14" />
+          <Route path="/tab15" component={Tab15} />
+          <Redirect exact from="/" to="/tab15" />
+          <Route path="/tab16" component={Tab16} />
+          <Redirect exact from="/" to="/tab16" />
+          <Route path="/tab17" component={Tab17} />
+          <Redirect exact from="/" to="/tab17" />
+          <Route path="/tab18" component={Tab18} />
+          <Redirect exact from="/" to="/tab18" />
+
           {/* <Route exact path="/tab1">
             <Tab1 />
           </Route>
@@ -119,7 +121,7 @@ const App: React.FC = () => (
           </Route> */}
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-        {/* <IonTabButton tab="tab0" href="/tab0">
+          {/* <IonTabButton tab="tab0" href="/tab0">
             <IonIcon  icon={home} />
             <IonLabel>Home</IonLabel>
           </IonTabButton> */}
@@ -147,7 +149,7 @@ const App: React.FC = () => (
             <IonIcon icon={timerOutline} />
             <IonLabel>Skip page 1</IonLabel>
           </IonTabButton> */}
-           <IonTabButton tab="tab15" href="/tab15">
+          <IonTabButton tab="tab15" href="/tab15">
             <IonIcon icon={timerOutline} />
             <IonLabel>Skip page 1</IonLabel>
           </IonTabButton>
@@ -159,10 +161,7 @@ const App: React.FC = () => (
             <IonIcon icon={timerOutline} />
             <IonLabel>Skip page 1</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab18" href="/tab18">
-            <IonIcon icon={timerOutline} />
-            <IonLabel>Skip page 1</IonLabel>
-          </IonTabButton>
+
           {/* <IonTabButton tab="tab4" href="/tab4">
             <IonIcon icon={person} />
             <IonLabel>Profile</IonLabel>
@@ -171,7 +170,7 @@ const App: React.FC = () => (
             <IonIcon icon={logoBuffer} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton> */}
-          
+
           {/* <IonTabButton tab="tab9" href="/tab9">
             <IonIcon icon={logoAmazon} />
             <IonLabel>Profile</IonLabel>
@@ -192,7 +191,7 @@ const App: React.FC = () => (
             <IonIcon icon={accessibility} />
             <IonLabel>Home-2</IonLabel>
           </IonTabButton> */}
-            {/* <IonTabButton tab="tab11" href="/tab11">
+          {/* <IonTabButton tab="tab11" href="/tab11">
             <IonIcon icon={logoBuffer} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton> */}
