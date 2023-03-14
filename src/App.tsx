@@ -10,7 +10,8 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle, home, heart, codeOutline, person, timerOutline, shuffle, logoDropbox, accessibility, logoBuffer, logoApple, logoAmazon } from 'ionicons/icons';
+import { ellipse, square, triangle, home, heart, codeOutline, person, timerOutline, shuffle, logoDropbox, accessibility, logoBuffer, logoApple, logoAmazon, build } from 'ionicons/icons';
+import Tab0 from './pages/Tab0';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -18,22 +19,6 @@ import Tab4 from './pages/Tab4';
 import Tab5 from './pages/Tab5';
 import Tab6 from './pages/Tab6';
 import Tab7 from './pages/Tab7';
-
-import '@ionic/react/css/core.css';
-
-import '@ionic/react/css/normalize.css';
-import '@ionic/react/css/structure.css';
-import '@ionic/react/css/typography.css';
-
-
-import '@ionic/react/css/padding.css';
-import '@ionic/react/css/float-elements.css';
-import '@ionic/react/css/text-alignment.css';
-import '@ionic/react/css/text-transformation.css';
-import '@ionic/react/css/flex-utils.css';
-import '@ionic/react/css/display.css';
-
-
 import './theme/variables.css';
 import Tab8 from './pages/Tab8';
 import Tab9 from './pages/Tab9';
@@ -41,12 +26,29 @@ import Tab10 from './pages/Tab10';
 import Tab11 from './pages/Tab11';
 import Tab12 from './pages/Tab12';
 import Tab13 from './pages/Tab13';
-import Tab0 from './pages/Tab0';
 import Tab14 from './pages/Tab14';
 import Tab15 from './pages/Tab15';
 import Tab16 from './pages/Tab16';
 import Tab17 from './pages/Tab17';
 import Tab18 from './pages/Tab18';
+import Tab19 from './pages/Tab19';
+import '@ionic/react/css/core.css';
+import '@ionic/react/css/normalize.css';
+import '@ionic/react/css/structure.css';
+import '@ionic/react/css/typography.css';
+import '@ionic/react/css/padding.css';
+import '@ionic/react/css/float-elements.css';
+import '@ionic/react/css/text-alignment.css';
+import '@ionic/react/css/text-transformation.css';
+import '@ionic/react/css/flex-utils.css';
+import '@ionic/react/css/display.css';
+import Tab20 from './pages/Tab20';
+import Tab21 from './pages/Tab21';
+import { profile } from 'console';
+import { settings } from 'cluster';
+
+
+
 
 
 
@@ -63,7 +65,6 @@ const App: React.FC = () => (
           <Redirect exact from="/" to="/tab1" />
           <Route path="/tab2" component={Tab2} />
           <Redirect exact from="/" to="/tab2" />
-
           <Route path="/tab3" component={Tab3} />
           <Redirect exact from="/" to="/tab3" />
           <Route path="/tab4" component={Tab4} />
@@ -96,6 +97,12 @@ const App: React.FC = () => (
           <Redirect exact from="/" to="/tab17" />
           <Route path="/tab18" component={Tab18} />
           <Redirect exact from="/" to="/tab18" />
+          <Route path="/tab19" component={Tab19} />
+          <Redirect exact from="/" to="/tab19" />
+          <Route path="/tab20" component={Tab20} />
+          <Redirect exact from="/" to="/tab20" />
+          <Route path="/tab21" component={Tab21} />
+          <Redirect exact from="/" to="/tab21" />
 
           {/* <Route exact path="/tab1">
             <Tab1 />
@@ -149,19 +156,34 @@ const App: React.FC = () => (
             <IonIcon icon={timerOutline} />
             <IonLabel>Skip page 1</IonLabel>
           </IonTabButton> */}
+          {/* <IonTabButton tab="tab15" href="/tab15">
+            <IonIcon icon={timerOutline} />
+            <IonLabel>Skip page 1</IonLabel>
+          </IonTabButton> */}
+          {/* <IonTabButton tab="tab16" href="/tab16">
+            <IonIcon icon={timerOutline} />
+            <IonLabel>Skip page 1</IonLabel>
+          </IonTabButton> */}
+          {/* <IonTabButton tab="tab17" href="/tab17">
+            <IonIcon icon={timerOutline} />
+            <IonLabel>Skip page 4</IonLabel>
+          </IonTabButton> */}
+          {/* <IonTabButton tab="tab18" href="/tab18">
+            <IonIcon icon={timerOutline} />
+            <IonLabel>Skip page 5</IonLabel>
+          </IonTabButton> */}
+          <IonTabButton tab="tab0" href="/tab0">
+            <IonIcon icon={home} />
+            <IonLabel>Home</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="tab20" href="/tab20">
+            <IonIcon icon={build} />
+            <IonLabel>Settings</IonLabel>
+          </IonTabButton>
           <IonTabButton tab="tab15" href="/tab15">
-            <IonIcon icon={timerOutline} />
-            <IonLabel>Skip page 1</IonLabel>
+            <IonIcon icon={person} />
+            <IonLabel>Profile</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab16" href="/tab16">
-            <IonIcon icon={timerOutline} />
-            <IonLabel>Skip page 1</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab17" href="/tab17">
-            <IonIcon icon={timerOutline} />
-            <IonLabel>Skip page 1</IonLabel>
-          </IonTabButton>
-
           {/* <IonTabButton tab="tab4" href="/tab4">
             <IonIcon icon={person} />
             <IonLabel>Profile</IonLabel>

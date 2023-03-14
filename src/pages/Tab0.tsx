@@ -9,8 +9,10 @@ const Tab0: React.FC = () => {
   const history = useHistory()
   return (
     <IonPage className='front-page'>
-         <IonImg className='front-page-img'  src='../assets/images/First page.png'></IonImg>
-         
+      <IonImg className='front-page-img'  src='../assets/images/First page.png'></IonImg>
+      <IonButton onClick={() => {
+            history.push('/tab2')
+          }} color="primary" className='button' expand="full" shape="round" ></IonButton>
     {/* <IonContent>
       <IonImg className='send-image ' src='../assets/images/Send money.png'></IonImg>
       <IonText className='heading-content'><h3 className='fs'>Send Money</h3></IonText>

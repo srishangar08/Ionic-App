@@ -14,10 +14,10 @@ const Tab4: React.FC = () => {
         <IonHeader>
           <IonItem lines='none'>
 
-            {/* <IonButton fill='clear'  onClick={() => {
-              history.push('/tab3') }}><IonIcon icon={chevronBackSharp}></IonIcon></IonButton>  */}
+            <IonButton fill='clear'  onClick={() => {
+              history.push('/tab3') }}><IonIcon icon={chevronBackSharp}></IonIcon></IonButton> 
             <IonTitle class='ion-text-center'>Editing Profile</IonTitle>
-            {/* <IonButton fill='clear'><IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton>  */}
+            <IonButton fill='clear'><IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton> 
           </IonItem>
         </IonHeader>
       </IonToolbar>

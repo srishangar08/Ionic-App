@@ -1,0 +1,11 @@
+.password-header{
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+
+.form-control{
+  text-align: center;
+  font-size: larger;
+  text-decoration: underline;
+}

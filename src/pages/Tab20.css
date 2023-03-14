@@ -1,0 +1,25 @@
+.verifyaccount{
+    text-align: center;
+    margin-top: 130px;
+    font-weight: 600;
+}
+.para-verification{
+    width: 62%;
+    text-align: center;
+    margin: auto;
+    opacity: 65%;
+}
+/* .para-span{
+    opacity: 90%;
+} */
+.para-verification-2{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    opacity: 65%;
+}
+.resend-code{
+    font-weight: 600;
+    margin: auto;
+     text-decoration: underline;
+}

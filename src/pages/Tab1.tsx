@@ -5,7 +5,7 @@ import { useHistory } from 'react-router';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
-  
+
   const history = useHistory()
   // const []
   const [isRevealPwd, setIsRevealPwd] = useState(false);
@@ -55,8 +55,9 @@ const Tab1: React.FC = () => {
       <IonToolbar>
         <IonFooter >
           <IonItem lines='none' />
-          <IonButton  onClick={() => {
-              history.push('/tab2') }} color="primary" className='button' expand="full" shape="round" ><span style={{ color: '#ffffff' }}>Save Email</span></IonButton>
+          <IonButton onClick={() => {
+            history.push('/tab2')
+          }} color="primary" className='button' expand="full" shape="round" ><span style={{ color: '#ffffff' }}>Save Email</span></IonButton>
 
         </IonFooter>
       </IonToolbar>
