@@ -17,7 +17,7 @@ const Tab2: React.FC = () => {
       </IonItem>
     </IonContent>
     <IonToolbar>
-        <IonFooter >
+        <IonFooter>
           <IonItem lines='none' />
           <IonButton  onClick={() => {
               history.push('/tab12') }} color="primary" className='button' expand="full" shape="round" ><span style={{ color: '#ffffff' }}>Next Step</span></IonButton>

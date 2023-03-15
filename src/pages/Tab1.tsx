@@ -18,7 +18,9 @@ const Tab1: React.FC = () => {
 
             <IonButton fill='clear'><IonIcon icon={chevronBackSharp}></IonIcon></IonButton>
             <IonTitle class='ion-text-center'>Change Email</IonTitle>
-            <IonButton fill='clear'><IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton>
+            <IonButton onClick={() => {
+            history.push('/tab5')
+          }} fill='clear'><IonIcon icon={ellipsisVerticalSharp}></IonIcon></IonButton>
           </IonItem>
         </IonHeader>
       </IonToolbar>
